@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 
 export const Carrousel = ({ postImgs }) => {
-  useEffect(() => {
-    console.log(postImgs);
-  }, []);
-
   return (
     <div id="carouselExampleIndicators" className="carousel slide">
       <div className="carousel-indicators">

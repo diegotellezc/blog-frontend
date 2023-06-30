@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="footer__info_developers">
         <p>Copyright &copy; 2023 Infinite Insights</p>
         <p>
-          developed by: <span className="footer_name">Benjamin Flores</span> And{" "}
+          Developed by: <span className="footer_name">Diego Téllez</span> And{" "}
           <span className="footer_name">Luis Avendaño</span>
         </p>
       </div>

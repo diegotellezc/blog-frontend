@@ -19,6 +19,17 @@ const Comment = ({ comments }) => {
     <div className="comment-section">
       <h2>Comentarios</h2>
 
+      <ul className="comments-list">
+        {comments?.map((comment) => (
+          <li key={comment.id}>
+            <span className="user">
+              {(comment?.user?.name).toUpperCase()}:{" "}
+            </span>
+            {comment?.text}
+          </li>
+        ))}
+      </ul>
+
       <form className="comment-form" onSubmit={handleSubmit}>
         <label htmlFor="new-comment">Agregar comentario:</label>
         <textarea
@@ -30,14 +41,6 @@ const Comment = ({ comments }) => {
         />
         <button type="submit">Comentar</button>
       </form>
-      <ul className="comments-list">
-        {comments?.map((comment) => (
-          <li key={comment.id}>
-            <span className="user">{comment?.user?.name}: </span>
-            {comment?.text}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

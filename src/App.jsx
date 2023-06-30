@@ -18,9 +18,9 @@ import { renewThunk } from "./store/slices/user.slice";
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(renewThunk());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(renewThunk());
+  // }, []);
 
   useEffect(() => {
     dispatch(getAllPostThunk());

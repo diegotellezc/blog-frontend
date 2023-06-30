@@ -15,7 +15,6 @@ const Home = () => {
   const { socket, online } = useSocket("http://localhost:3000");
 
   useEffect(() => {
-    console.log(posts);
     socket.on("render-new-post", (data) => {
       dispatch(addPost(data));
       console.log("Se ha creado un post", data);

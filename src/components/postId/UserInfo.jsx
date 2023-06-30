@@ -7,7 +7,7 @@ const UserInfo = ({ postId }) => {
   const handleCardClick = () => {
     navigate(`/user/${postId.user.id}`);
   };
-
+  console.log(postId);
   return (
     <article className="userinfo__content">
       <header className="userinfo__header">

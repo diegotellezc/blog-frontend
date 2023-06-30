@@ -15,6 +15,7 @@
   width: 5em;
   height: 5em;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .userinfo__body > h3 {

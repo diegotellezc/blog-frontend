@@ -3,6 +3,10 @@
   margin-left: 20%;
 }
 
+.postidinfo img {
+  object-fit: cover;
+}
+
 .postidinfo > h2 {
   font-size: 3em;
   margin-bottom: 1em;

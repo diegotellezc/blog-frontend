@@ -9,10 +9,13 @@ const usePostCrud = () => {
 
   const dispatch = useDispatch();
 
-  // POST - Crear un nuevo posts
   const createNewPost = (formData, socket) => {
-    blogApi
-      .post("/posts", formData)
+    const headers = {
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    };
+
+    axios
+      .post("http://localhost:3000/api/v1/posts", formData, { headers })
       .then((res) => {
         socket.emit("new-post", res.data.post);
         dispatch(getAllPostThunk());

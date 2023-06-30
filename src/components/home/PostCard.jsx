@@ -14,7 +14,7 @@ const PostCard = ({ post }) => {
       <header className="post__header">
         <img
           className="post__image"
-          src={post?.postImgs[1].postImgUrl}
+          src={post?.postImgs[0]?.postImgUrl}
           alt=""
         />
       </header>

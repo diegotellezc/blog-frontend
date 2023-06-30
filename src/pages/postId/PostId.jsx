@@ -13,7 +13,6 @@ const PostId = () => {
 
   useEffect(() => {
     getPostById(id);
-    console.log(postId);
   }, []);
 
   return (

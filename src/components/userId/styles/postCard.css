@@ -35,13 +35,16 @@
 }
 .userpost__footer {
   display: grid;
-  grid-template-columns: 3em 1fr 1.5em;
+  grid-template-columns: 4.2em 1fr 1.5em;
   align-items: center;
   gap: 1em;
   margin: 0 1.2em 1.2em 1.2em;
 }
 .userpost__avatar-img {
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
+  object-fit: cover;
 }
 .userpost__nameUser {
   font-weight: 300;
